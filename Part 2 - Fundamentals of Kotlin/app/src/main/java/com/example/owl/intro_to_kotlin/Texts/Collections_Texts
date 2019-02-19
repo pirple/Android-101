@@ -1,0 +1,29 @@
+- Collections
+- What are lists and arrays
+- Non mutable lists and arrays
+
+// non-mutable lists, arrays
+// val/var name = listof<type>(val1, val2, ...)
+
+var weekdays = listOf<String>("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+weekdays.get(4)
+weekdays[4]
+weekdays[3]
+weekdays = listOf("")
+
+val trueOrFalseAnswerKey = arrayOf(false, true, true, false, false)
+trueOrFalseAnswerKey.set(2, false)
+trueOrFalseAnswerKey[2] = false
+
+**********************************************************************************************
+
+- Mutable lists and arraylists
+
+// Mutable lists and arrays
+var roster = mutableListOf<String>("Nimish", "Sarah", "John")
+roster.add("Tracy")
+val nimish: String = roster.removeAt(0)
+
+val bread: String = "Bread"
+var shoppingList = arrayListOf<String>("Eggs", "Butter", "Shoes")
+shoppingList.add(0, bread)

@@ -1,0 +1,58 @@
+// Basic variable types
+// Primitive types, strings
+// Set up and usage
+
+// val/var name: type
+// name = value
+// Ints, Floats, Doubles, Booleans, Chars, Strings
+
+var todaysDate: Int = 27
+todaysDate = 28
+val daysInMarch: Int = 31
+
+var bankBalance: Float = 500.50f
+val itemCost: Double = 100.99
+
+var isDoorOpen: Boolean = true
+
+val spaceCharacter: Char = ' '
+
+val firstName: String = "Nimish"
+
+**********************************************************************************************
+
+// Basic variable operations
+// Assignment and arithmetic
+// Conditional
+
+// Operations
+// assignment: = !
+// arithmetic: + - * / % += -= *= /=
+// conditional: > >= < <= != == is
+
+val isDoorClosed: Boolean = !isDoorOpen
+
+val tomorrowsDate: Int = todaysDate + 1
+// bankBalance = bankBalance - 5.5f
+bankBalance -= 5.5f
+
+val modTodaysDate = todaysDate % 5
+
+val isNameString: Boolean = firstName is String
+
+val fullName: String = firstName + "Narang"
+
+val isGreater: Boolean = firstName > "Narang"
+
+val stringTodaysDate: String = todaysDate.toString()
+
+**********************************************************************************************
+
+// Nullable variables
+// Null value
+// Safe null value checks
+s
+// Nullables
+var lastName: String? = "Narang"
+val length: Int? = lastName?.length
+// val length: Int = lastName!!.length

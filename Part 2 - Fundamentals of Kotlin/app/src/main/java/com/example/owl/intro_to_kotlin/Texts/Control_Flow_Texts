@@ -1,0 +1,60 @@
+- Control flow
+- What control flow is
+- If statements and expressions
+
+// if (condition to test) { execute code if true }
+
+var isDoorOpen: Boolean = false
+var isDoorLocked: Boolean = true
+var doesHaveKey: Boolean = true
+var action: String = ""
+
+if (isDoorLocked == true && doesHaveKey == false) {
+    action = "Leave"
+} else if (isDoorOpen == true) {
+    action = "Enter"
+} else {
+    action = "Open door"
+}
+
+action = if (isDoorOpen == true) "Enter" else "Leave"
+
+**********************************************************************************************
+
+- When statements and expressions
+
+// When statements and expressions
+
+when (isDoorOpen) {
+    true -> action = "Enter"
+    false -> action = "Leave"
+    else -> {}
+}
+
+**********************************************************************************************
+
+- While loops
+
+// While loops
+// while (condition to test) { code to execute if condition returns true }
+var current: Int = 1
+val max: Int = 100
+var total: Int = 0
+while (current <= 100) {
+    total += current
+    current += 1
+}
+
+**********************************************************************************************
+
+- For each loops
+
+// For in loops
+
+val roster = listOf<String>("Nimish", "Suzie", "Jack", "Jill")
+var namesString: String = ""
+
+for (name in roster) {
+    Log.d("mainActivity", name)
+    namesString += name + ", "
+}

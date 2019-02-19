@@ -1,0 +1,68 @@
+- Intro to classes and objects
+- Fields, constructors, methods
+- Instantiating classes
+
+package com.example.owl.intro_to_kotlin
+
+open class Clothing(var name: String, var size: Int) {
+
+    var isClean: Boolean = false
+
+    constructor(name: String, size: Int, isClean: Boolean): this(name, size) {
+        this.isClean = isClean
+    }
+
+    open fun washClothing() {
+        this.isClean = true
+    }
+
+}
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+
+    val t_shirt: Clothing = Clothing("t-shirt", 6)
+    val isClean = t_shirt.isClean
+    t_shirt.washClothing()
+
+}
+
+**********************************************************************************************
+
+- Subclassing and superclassing
+
+package com.example.owl.intro_to_kotlin
+
+class ShoesWithLaces(name: String, size: Int): Clothing(name, size) {
+
+    var lacesName: String? = null
+    var areLacesClean: Boolean = false
+    var areShoesLaced: Boolean = false
+
+    fun laceShoes(name: String) {
+        this.lacesName = name
+        this.areLacesClean = true
+        areShoesLaced = true
+    }
+
+    override fun washClothing() {
+        super.washClothing()
+        areLacesClean = true
+    }
+
+}
+
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val t_shirt: Clothing = Clothing("t-shirt", 6)
+        val isClean = t_shirt.isClean
+        t_shirt.washClothing()
+
+        val sneakers: ShoesWithLaces = ShoesWithLaces("sneakers", 10)
+        sneakers.laceShoes("checkered laces")
+        sneakers.washClothing()
+
+    }

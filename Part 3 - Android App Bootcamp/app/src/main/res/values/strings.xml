@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="welcome_message">Welcome to Nim\'s Todo List</string>
+    <string name="add_symbol">+</string>
+    <string name="add_item_message">Add a todo item</string>
+    <string name="add_item_edit_text_hint">Enter todo item name</string>
+    <string name="is_item_urgent_text">Urgent?</string>
+    <string name="save_item_text">Save</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="item_name_text">Item name</string>
+    <string name="item_urgency_text">Item urgency</string>
+    <string name="edit_item_message">Edit a todo item</string>
+    <string name="today_button_text">Today\'s Items</string>
+    <string name="past_button_text">Previous Items</string>
+</resources>

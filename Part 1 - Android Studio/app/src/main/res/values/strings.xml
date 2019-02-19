@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Intro to Android</string>
+    <string name="button_text">Press me!</string>
+    <string name="edit_text_placeholder">Enter text here</string>
+</resources>

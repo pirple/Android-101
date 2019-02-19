@@ -1,0 +1,50 @@
+- Functions
+- What are functions
+- How to implement and call functions
+
+var playerPosition: Int = 0
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+
+    // Function intro
+    move()
+}
+
+fun move() {
+    playerPosition += 2
+}
+
+**********************************************************************************************
+
+- Functions with parameters
+- Functions with return values
+
+var playerPosition: Int = 0
+val maxPosition: Int = 10
+val minPosition: Int = 0
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+
+    // Function intro
+    // move()
+    val isValidMove = move(5)
+}
+
+fun move() {
+    playerPosition += 2
+}
+
+// Functions with parameters
+
+fun move(byAmount: Int): Boolean {
+    if (playerPosition + byAmount > maxPosition || playerPosition + byAmount < minPosition) {
+        return false
+    } else {
+        playerPosition += byAmount
+        return true
+    }
+}
